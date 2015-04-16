@@ -13,7 +13,8 @@ MAJOR=`echo ${DESCRIBE} | awk '{split($0,a,"."); print a[1]}'`
 MINOR=`echo ${DESCRIBE} | awk '{split($0,a,"."); print a[2]}'`
 PATCH=`echo ${DESCRIBE} | awk '{split($0,a,"."); print a[3]}' | awk '{split($0,a,"-"); print a[1]}'`
 
-echo "Current version: ${DESCRIBE}"
+CURRENT_VERSION=${MAJOR}.${MINOR}.${PATCH}
+echo "Current version: ${CURRENT_VERSION}"
 # hack to remove 'v'
 MAJOR=$((MAJOR+0))
 
@@ -31,7 +32,7 @@ echo "Update version: ${UPDATE_VERSION}"
 
 git tag ${UPDATE_VERSION}
 git checkout -b ${UPDATE_VERSION}-release
-git rebase -i ${DESCRIBE}
+git rebase -i ${CURRENT_VERSION}
 SHA1=$(git log -n 1 --pretty=format:"%H" master)
 echo "Cherry-pick commit: ${SHA1}"
 git checkout github-master
