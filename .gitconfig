@@ -1,0 +1,15 @@
+[user]
+	name = Francois-Xavier Gentilhomme
+	email = gentilhomme.fx@outlook.fr
+[merge]
+	summary = true
+[color]
+	ui = true
+[core]
+	editor = vim
+[push]
+	default = current
+[webui]
+	autoupdate = true
+[alias]
+	webui = !/home/fxg/.git-webui/release/libexec/git-core/git-webui
