@@ -1,6 +1,10 @@
+deb http://ftp.fr.debian.org/debian/ stable main contrib non-free
+deb http://ftp.fr.debian.org/debian/ stable-updates main
+
 deb http://ftp.fr.debian.org/debian testing main contrib non-free
 deb http://ftp.debian.org/debian/ testing-proposed-updates main contrib non-free
 deb http://security.debian.org/ testing/updates main contrib non-free
-deb http://www.deb-multimedia.org testing main non-free
+
 deb http://ftp.fr.debian.org/debian/ unstable main contrib non-free
-deb http://repository.spotify.com stable non-free
+deb http://ftp.fr.debian.org/debian/ experimental main contrib non-free
+
