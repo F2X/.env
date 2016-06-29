@@ -9,7 +9,7 @@
 	editor = vim
 [push]
 	default = current
-[webui]
-	autoupdate = true
-[alias]
-	webui = !/home/fxg/.git-webui/release/libexec/git-core/git-webui
+[credential]
+	helper = store
+[pull]
+	rebase = true
