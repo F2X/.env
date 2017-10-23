@@ -1,0 +1,51 @@
+{
+  "files.exclude": {
+    "**/.vscode": true,
+    "**/.git": true,
+    "**/.pyc": true,
+    "**/.css": true,
+    "**/.js.html": true,
+    "**/.xml": true,
+    "**/.min.js": true,
+    "**/.svn": true,
+    "**/.DS_Store": true,
+    "**/node_modules/**": true,
+    "**/build/**": true,
+    "**/.tscache/**": true,
+    "**/.coverage/**": true,
+    "**/.awcache/**": true,
+    "**/__pycache__/**": true,
+    "**/.cache-loader/**": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/.tscache": true,
+    "**/.coverage": true,
+    "**/build": true,
+    "**/.min.js": true,
+    "**/.css": true
+  },
+  "puglint.enable": true,
+  "puglint.config": {
+    "extends": ".pug-lintrc"
+  },
+  "editor.tabSize": 2,
+  "files.trimTrailingWhitespace": true,
+  "eslint.validate": [
+    "javascript",
+    "typescript"
+  ],
+  "eslint.autoFixOnSave": true,
+  "eslint.run": "onType",
+  "python.formatting.formatOnSave": false,
+  "python.formatting.provider": "autopep8",
+  "python.linting.flake8Enabled": true,
+  "python.linting.pep8Enabled": true,
+  "python.linting.lintOnSave": true,
+  "python.pythonPath": "python3",
+  "python.linting.pylintEnabled": false,
+  "workbench.colorTheme": "Visual Studio Dark",
+  "workbench.editor.enablePreview": false,
+  "tslint.autoFixOnSave": false
+}
