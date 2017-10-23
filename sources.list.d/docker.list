@@ -1,0 +1,2 @@
+#deb https://apt.dockerproject.org/repo debian-stretch main
+deb [arch=amd64] https://download.docker.com/linux/debian stretch stable
